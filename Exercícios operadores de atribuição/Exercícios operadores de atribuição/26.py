@@ -1,0 +1,1 @@
+# Leia dois inteiros a e b. Em a: a += b, a *= 2, a %= 7.
