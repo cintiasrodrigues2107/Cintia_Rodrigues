@@ -1,0 +1,18 @@
+#Código para executar o cálculo do IMC e dar o resultado em tela:
+
+nome = input("Digite o nome: ")
+peso = float(input("Informe o pedo em Kg: "))
+altura = float(input("Informe a altura em metrps (ex. 1.75): "))
+
+imc = peso / (altura ** 2)
+print(f"{nome} , O seu IMC é: {imc: .2f}")
+
+baixo_peso = imc < 18.5
+peso_normal = 18.5 <= imc < 25
+sobrepeso = 25 <= imc < 30
+obesidade = imc >= 30
+
+print(baixo_peso)
+print(peso_normal)
+print(sobrepeso)
+print(obesidade)
