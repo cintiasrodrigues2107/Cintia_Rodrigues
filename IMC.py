@@ -1,8 +1,8 @@
 #Código para executar o cálculo do IMC e dar o resultado em tela:
 
 nome = input("Digite o nome: ")
-peso = float(input("Informe o pedo em Kg: "))
-altura = float(input("Informe a altura em metrps (ex. 1.75): "))
+peso = float(input("Informe o peso em Kg: "))
+altura = float(input("Informe a altura em metros (ex. 1.75): "))
 
 imc = peso / (altura ** 2)
 print(f"{nome} , O seu IMC é: {imc: .2f}")
