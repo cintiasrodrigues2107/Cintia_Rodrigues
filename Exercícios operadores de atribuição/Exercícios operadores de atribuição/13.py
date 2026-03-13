@@ -4,6 +4,9 @@
 n = int(input("Qual o número: "))
 n %= 2
 
+print(n)
+
+
 if n==0:
     print("O número é par: ")
 else:
