@@ -28,3 +28,24 @@ print("Fatiamento [0:2]:", frutas[0:2])
 
 # Verificar se um item está na lista:
 print("Tem 'maçã'?", "maçã" in frutas)
+
+#Outros operadores úteis
+print("Lista original 'numeros':", numeros)
+print("Soma dos números:", sum(numeros))
+print("Maior número:", max(numeros))
+print("Menor número:", min(numeros))
+
+numeros.reverse()
+print("Reversa:" , numeros)
+numeros.sort()
+print("Ordenada crescente:", numeros)
+numeros.sort(reverse=true)
+print("Ordenada decrescente:", numeros)
+
+# Iterar sobre lista
+for fruta in frutas:
+    print("Frutas:", fruta)
+
+# List comprehension (exemplo simples)
+quadrados = [n * n for n in [1, 2, 3, 4, 5,]]
+print("Quadrados:", quadrados)
