@@ -31,7 +31,7 @@ telefone_novo = input("Digite o novo telefone: ")
 (nome_atualizar in agenda) and agenda.__setitem__(nome_atualizar, telefone_novo)
 print("Após atualizar contato: ", agenda)
 
-nome_remover = input("Digite o nome do contato que deseja remover: "))
+nome_remover = input("Digite o nome do contato que deseja remover: ")
 agenda.pop(nome_remover)
 print(agenda)
 
