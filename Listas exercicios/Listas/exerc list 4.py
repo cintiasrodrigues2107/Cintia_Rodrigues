@@ -32,11 +32,3 @@ notas.sort()
 print("Lista notas nova:", notas)
 
 
-
-
-
-
-
-
-#notas[1] = "banana_prata"
-#print("Após alterar:", frutas)
