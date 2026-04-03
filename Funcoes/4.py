@@ -1,16 +1,7 @@
 #Crie uma função que receba uma lista de números e retorne o maior número da lista.
 
 def maior_numero(lista):
-    if not lista:  # Verifica se a lista está vazia
-        return None  # Retorna None se a lista estiver vazia
-    
-    maior = lista[0]  # Inicializa o maior número com o primeiro elemento da lista
-    
-    for numero in lista:
-        if numero > maior:
-            maior = numero
-            
-    return maior
+    return max(lista)  # Utiliza a função max para encontrar o maior número na lista
 
 
 num1 = int(input("Digite um número: "))

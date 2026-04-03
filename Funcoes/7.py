@@ -1,4 +1,4 @@
-#Crie uma função que receba uma palavra e verifique se ela é um palíndromo
+#Crie uma função que receba uma palavra e verifique se ela é um palíndromo/anacíclico
 #(lê igual de trás para frente).
 
 def palindromo(palavra):
