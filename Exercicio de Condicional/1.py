@@ -15,4 +15,3 @@ elif 18 <= idade <= 59:
     print("Adulto")
 else:
     print("Idoso")
-

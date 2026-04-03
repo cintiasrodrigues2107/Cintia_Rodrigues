@@ -7,3 +7,8 @@
 
 
 
+def soma(a, b, c):
+    soma = a + b + c
+    print(soma)
+
+soma = (2, 5, 8)
