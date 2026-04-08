@@ -2,6 +2,6 @@
 
 def somar(a, b):
     soma = a + b
-    return soma
+    return soma # Retorna tras o total aonde ele vai mostrar dentro do meu somar
 
 print(somar(5, 3))
