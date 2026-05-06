@@ -10,26 +10,26 @@
 #Ex. Pense numa tabela de excel, com colunas e linhas, onde cada linha representa um registro e cada coluna representa um campo ou atributo do registro.
 
 # BD Não Relacional = é um tipo de banco de dados que não utiliza tabelas relacionais, mas sim outros modelos de dados, como documentos, grafos ou colunas, para armazenar e gerenciar 
-    os dados de forma mais flexível e escalável.
+    os dados de forma mais flexível e escalável. NÃO SQL;
 #Ex. Pense numa coleção de documentos JSON, onde cada documento representa um registro e cada campo representa um atributo do registro, 
     sem a necessidade de uma estrutura fixa ou relacionamentos entre os documentos.
     
 #Arquitetura de BD = é a estrutura organizacional e o design de um banco de dados, que define como os dados são armazenados, acessados e gerenciados.
 
 #Centralizada = é um modelo de arquitetura de banco de dados onde os dados são armazenados e gerenciados em um único local, geralmente em um servidor centralizado,
-    e os usuários acessam os dados por meio de uma rede.
+    e os usuários acessam os dados por meio de uma rede. Ele é apenas uma conexão.
     
 #Cliente-Servidor = é um modelo de arquitetura de banco de dados onde os dados são armazenados e gerenciados em um servidor centralizado, 
     e os usuários acessam os dados por meio de clientes que se conectam ao servidor.
     
 #Distribuída = é um modelo de arquitetura de banco de dados onde os dados são armazenados e gerenciados em vários locais, 
-    geralmente em servidores distribuídos, e os usuários acessam os dados por meio de uma rede.
+    geralmente em servidores distribuídos, e os usuários acessam os dados por meio de uma rede. (Ofice 365)
     
 #Replicada = é um modelo de arquitetura de banco de dados onde os dados são replicados em vários locais,
     geralmente em servidores distribuídos, para garantir a disponibilidade e a tolerância a falhas.
     
 #Utilitarios = são ferramentas ou programas que auxiliam na administração, manutenção e otimização de um banco de dados,
-    como ferramentas de backup, monitoramento, análise de desempenho e gerenciamento de usuários.  
+    como ferramentas de backup, monitoramento, análise de desempenho e gerenciamento de usuários.  (Migração e sincronização)
 
 #carregamento (ETL) = Carregamento de dados é o processo de transferir dados de uma fonte para um destino, geralmente em um banco de dados ou data warehouse,
     para que possam ser armazenados, processados e analisados de forma eficiente.
@@ -44,9 +44,9 @@
 #Cuidar a versao do SQL, sempre a mais nova, para evitar problemas de compatibilidade e aproveitar os recursos mais recentes.
 
 #Subconjuuntos de SQL = são partes específicas da linguagem SQL que se concentram em diferentes aspectos do gerenciamento de bancos de dados, 
-# DDL (Data Definition Language), (select) - seleção de dados em um banco de dados, permitindo recuperar informações específicas com base em critérios definidos.
+# DQL (Data Definition Language), (select) - seleção de dados em um banco de dados, permitindo recuperar informações específicas com base em critérios definidos.
 # DML (Data Manipulation Language) (insert, update, delete) - para manipular os dados em um banco de dados, permitindo inserir, atualizar e excluir registros em tabelas.
-# DCL (Data Control Language) (create, alter, drop) - para criar, alterar e excluir objetos do banco de dados, como tabelas, índices e usuários.
+# DDL (Data Control Language) (create, alter, drop) - para criar, alterar e excluir objetos do banco de dados, como tabelas, índices e usuários.
 # DCL (Data Control Language) (grant, revoke) - para conceder ou revogar permissões de acesso aos objetos do banco de dados, como tabelas, colunas e procedimentos armazenados.
 # DTL (Data Transaction Language) (commit, rollback, begin) - para controlar as transações em um banco de dados, permitindo confirmar ou desfazer as operações realizadas em uma transação.
 
@@ -68,6 +68,11 @@
     
     Libera a memória, pois só ocupa o espaço necessário para armazenar os caracteres, ao contrário do CHAR, que ocupa o espaço fixo definido por "n", 
     mesmo que a cadeia de caracteres seja menor.
+    
+# CHARSET = é uma propriedade em bancos de dados que define o conjunto de caracteres utilizado para armazenar e manipular dados de texto,
+    permitindo representar caracteres de diferentes idiomas e conjuntos de símbolos de forma correta e eficiente, garantindo a integridade 
+    e a compatibilidade dos dados de texto em um banco de dados. 
+    (UTF-8, Latin1, etc. É a linguagem que o banco de dados vai usar para armazenar os dados de texto, para garantir que os caracteres sejam representados corretamente.)
 
 # TEXT = é um tipo de dado em bancos de dados que pode armazenar grandes quantidades de texto, geralmente com uma capacidade de armazenamento muito maior do que os tipos VARCHAR ou CHAR,
     permitindo armazenar textos longos, como descrições, comentários ou artigos, sem a necessidade de definir um limite de caracteres específico.
@@ -85,7 +90,7 @@
 
 # TIMESTAMP = é um tipo de dado em bancos de dados que pode armazenar valores de data e hora, geralmente no formato de ano, mês, dia, hora, minuto e segundo,
     permitindo representar momentos específicos no tempo, como data de criação, data de atualização ou data de eventos, de forma precisa e eficiente.
-    EX.: para converter a data e hora de um local para outro.
+    EX.: para converter a data e hora de um local para outro. (data com fuso horário)
 
 # ENUM = é um tipo de dado em bancos de dados que pode armazenar um conjunto de valores pré-definidos, permitindo representar informações categóricas ou enumeradas,
     como status, tipos ou categorias, de forma eficiente e fácil de usar, garantindo que os valores armazenados sejam limitados a um conjunto específico de opções.
@@ -110,9 +115,15 @@
     fazendo referência à chave primária "ID do Cliente" na tabela de clientes, permitindo associar cada pedido a um cliente específico.
     CORRELAÇÃO ENTRE DUAS TABELAS, PARA GARANTIR A INTEGRIDADE REFERENCIAL DOS DADOS.
     
+###ATRIBUTOS DE CAMPO###
+    
 # NOT NULL = é uma restrição em bancos de dados que indica que um campo não pode conter valores nulos, ou seja, deve sempre conter um valor válido,
     garantindo que os dados sejam completos e consistentes, e evitando a inserção de registros com campos vazios ou sem informações essenciais.
     (NÃO PODE SER NULO, MAS PODE SER VAZIO)
+    
+# NULL = é um valor especial em bancos de dados que representa a ausência de um valor ou a falta de informação em um campo,
+    indicando que o valor é desconhecido, não aplicável ou não disponível, e permitindo a inserção de registros com campos 
+    vazios ou sem informações essenciais, desde que a restrição NOT NULL não seja aplicada ao campo.
 
 # DEFAULT = é uma restrição em bancos de dados que define um valor padrão para um campo, que será atribuído automaticamente 
     quando nenhum valor for especificado durante a inserção de um registro, garantindo que os dados tenham um valor consistente 
