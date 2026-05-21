@@ -146,7 +146,7 @@
 # INNER JOIN = É tudo que é comum entre as tabelas;
 
 # LAFT JOIN = é tudo que tem na tabela da esquerda, mesmo que não tenha correspondência na tabela da direita;
-
+ 
 # RIGHT JOIN = é tudo que tem na tabela da direita, mesmo que não tenha correspondência na tabela da esquerda;
 
 # FULL OUTER JOIN = é tudo que tem em ambas as tabelas, mesmo que não tenha correspondência em uma delas;
