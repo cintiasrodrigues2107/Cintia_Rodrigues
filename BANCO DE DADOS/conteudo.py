@@ -143,5 +143,17 @@
     fornecendo informações adicionais sobre o propósito, uso ou significado dos dados, e facilitando a compreensão e 
     manutenção do banco de dados por parte dos desenvolvedores, administradores e outros usuários.
 
+# INNER JOIN = É tudo que é comum entre as tabelas;
+
+# LAFT JOIN = é tudo que tem na tabela da esquerda, mesmo que não tenha correspondência na tabela da direita;
+
+# RIGHT JOIN = é tudo que tem na tabela da direita, mesmo que não tenha correspondência na tabela da esquerda;
+
+# FULL OUTER JOIN = é tudo que tem em ambas as tabelas, mesmo que não tenha correspondência em uma delas;
+
+# CROSS JOIN = é o produto cartesiano entre as tabelas, ou seja, combina cada registro de uma tabela com cada registro da outra tabela,
+    resultando em um conjunto de resultados que contém todas as combinações possíveis entre os registros das duas tabelas, 
+    sem considerar nenhuma condição de correspondência ou relacionamento entre elas. 
+    
 
 '''
