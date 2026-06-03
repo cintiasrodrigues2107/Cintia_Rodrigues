@@ -5,9 +5,9 @@ from ui.utils import exibir_cabecalho
 def executar_sistema():
     while True:
         dados = carregar_dados()
-        exibir_cabecalho("SISTEMA TPAC ACESSIBLE")
+        exibir_cabecalho("SISTEMA DE APOIO AO ESTUDANTE - TEA")
         print("1. Entrar com perfil existente")
-        print("2. Criar novo perfil customizado")
+        print("2. Criar novo perfil de estudante")
         print("3. Encerrar")
         
         opcao = input("\nEscolha uma opção: ").strip()
@@ -26,7 +26,7 @@ def executar_sistema():
         elif opcao == "2":
             criar_usuario_menu(dados)
         elif opcao == "3":
-            print("\nAté logo!")
+            print("\nAté logo! Bons estudos!")
             break
 
 if __name__ == "__main__":

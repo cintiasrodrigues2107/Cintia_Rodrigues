@@ -4,14 +4,14 @@ import core.tarefas as core_tarefas
 import core.ia_service as ia_service
 
 def criar_usuario_menu(dados: dict):
-    exibir_cabecalho("CRIAR NOVO PERFIL")
-    nome = input("Digite o nome do usuário: ").strip()
+    exibir_cabecalho("CRIAR PERFIL DO ESTUDANTE")
+    nome = input("Digite o nome do estudante: ").strip()
     if not nome or nome in dados:
         input("\nNome inválido ou já existente. Pressione Enter.")
         return
 
     print("\n--- Preferências de Comunicação ---")
-    print("1. Passo a passo curto e direto (Recomendado para TPAC)")
+    print("1. Passo a passo curto e direto")
     print("2. Detalhado e explicativo")
     pref = input("Opção: ").strip()
     estilo = "direto" if pref == "1" else "detalhado"
@@ -84,7 +84,10 @@ def painel_ia_menu(dados: dict, usuario: str):
 def painel_principal_menu(dados: dict, usuario: str):
     while True:
         exibir_cabecalho(f"PAINEL DO USUÁRIO: {usuario}")
-        print("1. Atividades Diárias\n2. Atividades Educacionais\n3. 🤖 Central de IA\n4. Logout")
+        print("1. Rotina diária")
+        print("2. Estudos e atividades")
+        print("3. Central de apoio")
+        print("4. Logout")
         opcao = input("\nEscolha: ").strip()
         if opcao == "1":
             gerenciar_tarefas_menu(dados, usuario, "tarefas_diarias", "ROTINA DIÁRIA")
